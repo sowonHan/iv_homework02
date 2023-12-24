@@ -1,0 +1,62 @@
+.guide_title {
+	font-size: 35px;
+    margin: 0 auto;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.tab_wrap {margin: 0 auto 50px;}
+
+.hash_list {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px;
+}
+
+.hash_item {
+	font-size: 24px;
+    color: #787878;
+    margin: 0 10px;
+    font-weight: 500;
+    position: relative;
+}
+
+.active {color: #444444;}
+
+.active::after {
+	content: "";
+    background-color: #F7E8EA;
+    display: block;
+    height: 0.7em;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+.tab_list {
+    position: relative;
+	padding: 0 10px;
+}
+.swiper.hash_banner {position: static;}
+
+.hash_banner .swiper-slide > a > img {
+	border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.tab_list .swiper-button-prev, .tab_list .swiper-button-next {
+	color: gray;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: auto 50%;
+    border: 1px solid #EAEAEA;
+}
+
+.tab_list .swiper-button-prev {left: -10px;}
+.tab_list .swiper-button-next {right: -10px;}
+.tab_list .swiper-button-next:after, .tab_list .swiper-button-prev:after {font-size: 20px;}
+.tab_list .swiper-button-disabled {pointer-events: unset;}
