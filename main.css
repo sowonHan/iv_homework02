@@ -1,5 +1,5 @@
 .guide_title {
-	font-size: 35px;
+    font-size: 35px;
     margin: 0 auto;
     font-weight: 700;
     width: fit-content;
@@ -8,14 +8,14 @@
 .tab_wrap {margin: 0 auto 50px;}
 
 .hash_list {
-	display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px 0 50px;
 }
 
 .hash_item {
-	font-size: 24px;
+    font-size: 24px;
     color: #787878;
     margin: 0 10px;
     font-weight: 500;
@@ -25,7 +25,7 @@
 .active {color: #444444;}
 
 .active::after {
-	content: "";
+    content: "";
     background-color: #F7E8EA;
     display: block;
     height: 0.7em;
@@ -37,18 +37,18 @@
 
 .tab_list {
     position: relative;
-	padding: 0 10px;
+    padding: 0 10px;
 }
 .swiper.hash_banner {position: static;}
 
 .hash_banner .swiper-slide > a > img {
-	border-radius: 10px;
+    border-radius: 10px;
     width: 100%;
     height: auto;
 }
 
 .tab_list .swiper-button-prev, .tab_list .swiper-button-next {
-	color: gray;
+    color: gray;
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.7);
