@@ -1,11 +1,28 @@
+/* 퍼블리싱 과제 : 배너매니저 스와이퍼 */
+@font-face {
+	font-family: "Pretendard";
+    src: url('/iv/font/Pretendard-Regular.woff2') format('woff2'),
+        url('/iv/font/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+	font-family: "Pretendard";
+    src: url('/iv/font/Pretendard-Medium.woff2') format('woff2'),
+        url('/iv/font/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+.guide_con {font-family: Pretendard, Verdana,Dotum, AppleGothic, sans-serif;}
+
 .guide_title {
     font-size: 35px;
     margin: 0 auto;
-    font-weight: 700;
+    font-weight: 500;
     width: fit-content;
 }
 
-.tab_wrap {margin: 0 auto 50px;}
+.tab_wrap {margin: 0 auto 100px;}
 
 .hash_list {
     display: flex;
@@ -18,8 +35,9 @@
     font-size: 24px;
     color: #787878;
     margin: 0 10px;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
+    cursor: pointer;
 }
 
 .active {color: #444444;}
@@ -58,5 +76,34 @@
 
 .tab_list .swiper-button-prev {left: -10px;}
 .tab_list .swiper-button-next {right: -10px;}
-.tab_list .swiper-button-next:after, .tab_list .swiper-button-prev:after {font-size: 20px;}
-.tab_list .swiper-button-disabled {pointer-events: unset;}
+.tab_list .swiper-button-next::after, .tab_list .swiper-button-prev::after {font-size: 20px;}
+.tab_list .swiper-button-disabled {pointer-events: auto;}
+
+.swiper-pagination {bottom: -65px;}
+
+.swiper-pagination-fraction {
+	color: #787878;
+    font-size: 17px;
+}
+
+.slide_link {
+	display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner_txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+	color: #fff;
+    font-size: 23px;
+    line-height: 1.3;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+}
+
+/* sidebar가 화면 가리고 있어서 숨기기 위한 설정 */
+.position {display: none;}
